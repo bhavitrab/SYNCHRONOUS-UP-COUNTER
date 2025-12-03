@@ -74,7 +74,7 @@ Developed by: BHAVITRA B RegisterNumber:25012160
 
 
 
-**TRUTH TABLE**
+
 <img width="673" height="719" alt="image" src="https://github.com/user-attachments/assets/46e7c8fd-d708-437e-8e52-1b14e8dc3acd" />
 
 
