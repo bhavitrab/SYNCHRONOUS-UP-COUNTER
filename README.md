@@ -70,8 +70,20 @@ Developed by: BHAVITRA B RegisterNumber:25012160
 <img width="1325" height="215" alt="Screenshot 2025-12-03 133909" src="https://github.com/user-attachments/assets/d9e62462-0930-4527-b0dc-70d597c7bf2f" />
 
 
+
+
+
+
 **TRUTH TABLE**
 <img width="673" height="719" alt="image" src="https://github.com/user-attachments/assets/46e7c8fd-d708-437e-8e52-1b14e8dc3acd" />
+
+
+
+
+
+
+
+
 **RESULTS**
 The given Sychronous Up Counter is successfully implemented using Verilog HDL in the Quartus Prime.
 
