@@ -27,20 +27,51 @@ The next flip-flop need only “recognize” that the first flip-flop’s Q outp
 However, the remaining flip-flops should be made ready to toggle only when all lower-order output bits are “high,” thus the need for AND gates.
 
 **Procedure**
+1.Understand: All flip-flops are triggered by the same clock (synchronous operation).
 
-/* write all the steps invloved */
+2.Define module with inputs clk, rstn and output out[3:0].
+
+3.Use always block triggered on the posedge of clk.
+
+4.Apply reset: if rstn = 0, set output to 0000.
+
+5.Count up: else increment output by 1 on every clock pulse.
+
+6.Simulate: Apply clock and reset signals to test the counter.
+
+7.Verify: Check that output counts 0000 → 1111 → 0000 repeatedly.
 
 **PROGRAM**
 
-/* Program for flipflops and verify its truth table in quartus using Verilog programming. 
+ Program for flipflops and verify its truth table in quartus using Verilog programming. 
+ ```
+module ex11(out,clk,rst); 
+input clk,rst; 
+output reg [3:0]out; 
+always @ (posedge clk) 
+begin 
+   if(rst) 
+     out<=0; 
+   else  
+     out <= out+1; 
+end 
+endmodule
+```
 
-Developed by: RegisterNumber:
-*/
+Developed by: BHAVITRA B RegisterNumber:25012160
+
 
 **RTL LOGIC UP COUNTER**
+<img width="1535" height="840" alt="Screenshot 2025-12-03 133242" src="https://github.com/user-attachments/assets/5f2fecdc-0142-4cdb-b233-09850617f602" />
+
+
 
 **TIMING DIAGRAM FOR IP COUNTER**
+<img width="1325" height="215" alt="Screenshot 2025-12-03 133909" src="https://github.com/user-attachments/assets/d9e62462-0930-4527-b0dc-70d597c7bf2f" />
+
 
 **TRUTH TABLE**
-
+<img width="673" height="719" alt="image" src="https://github.com/user-attachments/assets/46e7c8fd-d708-437e-8e52-1b14e8dc3acd" />
 **RESULTS**
+The given Sychronous Up Counter is successfully implemented using Verilog HDL in the Quartus Prime.
+
